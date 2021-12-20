@@ -9,13 +9,14 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../assets/images/logo.JPG'
-import avt from '../../assets/images/14f72269c31a3044690b.jpg'
-import { Avatar } from '@mui/material';
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import { Badge } from '@mui/material';
 import './Header.scss'
+import { MenuItem } from '@mui/material';
+import { Route, Routes, Link } from 'react-router-dom';
+// import App from '../../views/App';
+import Comics from '../Comics/Comics';
 
 
 
@@ -110,84 +111,110 @@ function Header() {
   }));
   // Avt
 
-  const StyledBadge = styled(Badge)(({ theme }) => ({
-    '& .MuiBadge-badge': {
-      backgroundColor: '#44b700',
-      color: '#44b700',
-      boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
-      '&::after': {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        borderRadius: '50%',
-        animation: 'ripple 1.2s infinite ease-in-out',
-        border: '1px solid currentColor',
-        content: '""',
-      },
-    },
-    '@keyframes ripple': {
-      '0%': {
-        transform: 'scale(.8)',
-        opacity: 1,
-      },
-      '100%': {
-        transform: 'scale(2.4)',
-        opacity: 0,
-      },
-    },
-  }));
-
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            <a href='/'><img src={logo} alt='logo' height={55} className='img-logo' /></a>
-          </Typography>
-          {/* Search */}
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-          {/* Avt */}
-          {/* <StyledBadge
-            overlap="circular"
-            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-            variant="dot"
-          >
-            <Avatar alt="Remy Sharp" src={avt} sx={{ width: 40, height: 40 }}/>
-          </StyledBadge> */}
-          {/* Dark-light mode */}
-          <Stack direction="row" spacing={1} alignItems="center">
-            <FormControlLabel
-              control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-              label=""
-            />
-          </Stack>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <div>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
+          <Toolbar>
+            {/* Btn */}
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/'><p>Home</p></Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/comics'><p>Comics</p></Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/videos'><p>Videos</p></Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/films'><p>Films</p></Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/community'><p>Community</p></Link>
+              </Typography>
+            </MenuItem>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            >
+              <Link to='/'><img src={logo} alt='logo' height={55} className='img-logo' /></Link>
+            </Typography>
+            {/* Search */}
+            <Search>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ 'aria-label': 'search' }}
+              />
+            </Search>
+            {/* Dark Mode */}
+            <Stack direction="row" spacing={1} alignItems="center">
+              <FormControlLabel
+                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+                label=""
+              />
+            </Stack>
+          </Toolbar>
+        </AppBar>
+      </Box>
+      {/* Router */}
+      <Routes>
+        {/* <Route path='/' element={<App />}></Route> */}
+        <Route path='/comics' element={<Comics />}></Route>
+      </Routes>
+    </div>
   );
 };
 export default Header;

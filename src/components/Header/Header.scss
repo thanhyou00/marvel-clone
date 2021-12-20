@@ -5,7 +5,7 @@
 
 .img-logo {
     margin-top: 5px;
-    align-items: center;
+    // align-items: center;
 }
 
 .css-2ldpwk-MuiAvatar-root {
@@ -14,5 +14,18 @@
 
 .css-lu9khh-MuiSwitch-root {
     margin-left: 20px !important;
-    margin-right: -20px !important;
+    // margin-right: -20px !important;
 }
+
+.nav-text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-text a:hover {
+    color: #1289A7;
+}
+

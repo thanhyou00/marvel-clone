@@ -28,7 +28,7 @@ const images = [
         imgPath:slide2,
     },
     {
-        label: 'Avengers Endgame Characters',
+        label: 'Avengers: Endgame Final Battle',
         imgPath:slide3,
     },
     {
@@ -81,7 +81,7 @@ function Carousel() {
                             <Box
                                 component="img"
                                 sx={{
-                                    height: 600,
+                                    height: 700,
                                     display: 'block',
                                     overflow: 'hidden',
                                     width: '100%',
