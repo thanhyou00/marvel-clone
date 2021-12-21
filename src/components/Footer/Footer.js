@@ -1,8 +1,11 @@
 import './Footer.scss'
 
+
 function Footer() {
-    return(
-        <div>Footer</div>
+    return (
+        <div>
+            <div>Footer</div>
+        </div>
     )
 }
 

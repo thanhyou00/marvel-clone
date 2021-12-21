@@ -6,7 +6,7 @@ import Divider from "@mui/material/Divider";
 import ironmanlogo from '../../assets/images/iron-man.png'
 import spidermanlogo from '../../assets/images/spiderman.png'
 import hulklogo from '../../assets/images/hulk.png'
-import thorlogo from '../../assets/images/thor.png'
+import captionlogo from '../../assets/images/caption.png'
 
 
 const Grid = styled(MuiGrid)(({ theme }) => ({
@@ -25,7 +25,7 @@ function HomeStory() {
             The character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, 
             and designed by artists Don Heck and Jack Kirby. The character made his first appearance in Tales 
             of Suspense #39 (cover dated March 1963), and received his own title in Iron Man #1 (May 1968). Also in 1963, 
-            the character founded the Avengers alongside Thor, Ant-Man, Wasp and the Hulk.`}
+            the character founded the Avengers alongside caption, Ant-Man, Wasp and the Hulk.`}
         </h3>
     );
     const ironmanImg = (
@@ -59,18 +59,21 @@ function HomeStory() {
     const hulkImg = (
         <img src={hulklogo} alt="iron-man" width={300} height={300} />
     )
-        // thor
-        const thor = (
-            <h3 className="content-character">
-                {`Thor Odinson, or simply Thor, is a fictional character appearing in American comic books published by Marvel Comics. 
-                The character is based on the Norse deity of the same name, the Asgardian god of thunder whose enchanted hammer 
-                Mjolnir enables him to fly and manipulate weather, among his other superhuman attributes. A founding member of the 
-                superhero team the Avengers, Thor has a host of supporting characters and enemies.`}
-            </h3>
-        );
-        const thorImg = (
-            <img src={thorlogo} alt="iron-man" width={300} height={400} />
-        )
+    // caption
+    const caption = (
+        <h3 className="content-character">
+            {`Captain America is a superhero appearing in American comic books published by Marvel Comics. Created by 
+            cartoonists Joe Simon and Jack Kirby, the character first appeared in Captain America Comics #1 
+            (cover dated March 1941) from Timely Comics, a predecessor of Marvel Comics. Captain America was 
+            designed as a patriotic supersoldier who often fought the Axis powers of World War II and was Timely 
+            Comics' most popular character during the wartime period. The popularity of superheroes waned following 
+            the war, and the Captain America comic book was discontinued in 1950, with a short-lived revival in 1953. 
+            Since Marvel Comics revived the character in 1964, Captain America has remained in publication.`}
+        </h3>
+    );
+    const captionImg = (
+        <img src={captionlogo} alt="iron-man" width={300} height={500} />
+    )
 
     return (
         <div className="content-main">
@@ -81,7 +84,7 @@ function HomeStory() {
                     {ironmanImg}
                 </Grid>
                 <Divider orientation="vertical" flexItem>
-                    IRON MAN
+                    Iron man
                 </Divider>
                 <Grid item xs >
                     {ironman}
@@ -93,7 +96,7 @@ function HomeStory() {
                     {spiderman}
                 </Grid>
                 <Divider orientation="vertical" flexItem>
-                    SPIDER MAN
+                    Spider man
                 </Divider>
                 <Grid item xs >
                     {spidermanImg}
@@ -105,22 +108,22 @@ function HomeStory() {
                     {hulkImg}
                 </Grid>
                 <Divider orientation="vertical" flexItem>
-                    HULK
+                    Hulk
                 </Divider>
                 <Grid item xs >
                     {hulk}
                 </Grid>
             </Grid>
-            {/* Thor */}
+            {/* Caption */}
             <Grid container>
                 <Grid item xs>
-                    {thor}
+                    {caption}
                 </Grid>
                 <Divider orientation="vertical" flexItem>
-                THOR ODINSON
+                Captain America
                 </Divider>
                 <Grid item xs >
-                    {thorImg}
+                    {captionImg}
                 </Grid>
             </Grid>
         </div>

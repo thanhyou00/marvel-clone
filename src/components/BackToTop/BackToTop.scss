@@ -1,0 +1,23 @@
+
+.container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    background: #ED4C67;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px black;
+  }
+  
+  .back-to-top:hover {
+    background: #12CBC4;
+  }

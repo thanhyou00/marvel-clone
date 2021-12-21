@@ -1,5 +1,11 @@
+// .heading {
+//     position: fixed;
+// }
+
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
     background-color: black !important;
+    position: fixed !important;
+    z-index: 999;
     height: 65px !important;
 }
 
@@ -28,4 +34,6 @@
 .nav-text a:hover {
     color: #1289A7;
 }
+
+
 

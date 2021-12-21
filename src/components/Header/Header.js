@@ -3,12 +3,10 @@ import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import logo from '../../assets/images/logo.JPG'
+import logo from '../../assets/images/logo.png'
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -17,6 +15,7 @@ import { MenuItem } from '@mui/material';
 import { Route, Routes, Link } from 'react-router-dom';
 // import App from '../../views/App';
 import Comics from '../Comics/Comics';
+import Home from '../Home/Home';
 
 
 
@@ -109,23 +108,22 @@ function Header() {
       },
     },
   }));
-  // Avt
+
 
   return (
-    <div>
+    <div className='heading'>
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static">
           <Toolbar>
-            {/* Btn */}
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2 }}
+            {/* Logo */}
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              <MenuIcon />
-            </IconButton>
+              <Link to='/'><img src={logo} alt='logo' height={55} className='img-logo' /></Link>
+            </Typography>
             <MenuItem>
               <Typography
                 className='nav-text'
@@ -181,14 +179,28 @@ function Header() {
                 <Link to='/community'><p>Community</p></Link>
               </Typography>
             </MenuItem>
-            <Typography
-              variant="h6"
-              noWrap
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            >
-              <Link to='/'><img src={logo} alt='logo' height={55} className='img-logo' /></Link>
-            </Typography>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/contacts'><p>Contacts</p></Link>
+              </Typography>
+            </MenuItem>
+            <MenuItem>
+              <Typography
+                className='nav-text'
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ display: { xs: 'none', sm: 'block' } }}
+              >
+                <Link to='/account'><p>Account</p></Link>
+              </Typography>
+            </MenuItem>
             {/* Search */}
             <Search>
               <SearchIconWrapper>
@@ -211,7 +223,7 @@ function Header() {
       </Box>
       {/* Router */}
       <Routes>
-        {/* <Route path='/' element={<App />}></Route> */}
+        <Route path='/' element={<Home />}></Route>
         <Route path='/comics' element={<Comics />}></Route>
       </Routes>
     </div>
