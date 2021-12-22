@@ -35,14 +35,16 @@ function Footer() {
             {`Follow us`}
             <div className='social'>
                 <Stack direction="row" spacing={2}>
-                    <FacebookIcon fontSize={'large'} />
-                    <InstagramIcon fontSize={'large'} />
-                    <TwitterIcon fontSize={'large'} />
-                    <GitHubIcon fontSize={'large'} />
+                    <FacebookIcon  />
+                    <InstagramIcon  />
+                    <TwitterIcon  />
+                    <GitHubIcon  />
                 </Stack>
             </div>
             <div style={{marginTop:20}}>
-                <Button variant="contained">Join with us</Button>
+                <Button variant="contained">
+                    <a href='https://www.facebook.com/groups/242272107118908'>Join with us</a>
+                </Button>
             </div>
         </div>
     );
