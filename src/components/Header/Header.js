@@ -122,7 +122,7 @@ function Header() {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              <Link to='/'><img src={logo} alt='logo' height={55} className='img-logo' /></Link>
+              <Link to='/'><img src={logo} alt='logo' height={50} className='img-logo' /></Link>
             </Typography>
             <MenuItem>
               <Typography
