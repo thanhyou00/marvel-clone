@@ -8,6 +8,10 @@ import Pagination from '@mui/material/Pagination';
 import PropTypes from 'prop-types';
 import { Grid, Stack } from '@mui/material';
 import DisplayCard from '../Cards/DisplayCard';
+// import Trendings from '../Trendings/Trendings';
+import imgSpiderman from '../../assets/images/nguoi-nhen-tro-ve-nha-2017-8524.jpg'
+import imgIronman from '../../assets/images/Iron_Man_2_poster_Viet.jpg'
+import imgCaption from '../../assets/images/captionamerica.jpg'
 
 
 function Comics() {
@@ -92,7 +96,7 @@ function Comics() {
     return (
         <div className='comics'>
             <div className='tabs-ui'>
-                <Stack direction="row" spacing={3}>
+                <Stack direction="row" >
                     <Box
                         sx={{
                             flexGrow: 1,
@@ -131,93 +135,211 @@ function Comics() {
                                             value={value1}
                                             onChange={handleChange1}
                                             aria-label="basic tabs example">
-                                            <Tab className='txt-ui' label="Item One" {...a11yProps1(0)} />
-                                            <Tab className='txt-ui' label="Item Two" {...a11yProps1(1)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(2)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(3)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(4)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(5)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(6)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(7)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(8)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(9)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(10)} />
-                                            <Tab className='txt-ui' label="Item Three" {...a11yProps1(11)} />
+                                            <Tab className='txt-ui' label="SPIDER-MAN" {...a11yProps1(0)} />
+                                            <Tab className='txt-ui' label="IRON MAN" {...a11yProps1(1)} />
+                                            <Tab className='txt-ui' label="CAPTAIN AMERICA" {...a11yProps1(2)} />
+                                            <Tab className='txt-ui' label="BLACK PANTHER" {...a11yProps1(3)} />
+                                            <Tab className='txt-ui' label="ANT-MAN" {...a11yProps1(4)} />
+                                            <Tab className='txt-ui' label="CAPTAIN MARVEL" {...a11yProps1(5)} />
+                                            <Tab className='txt-ui' label="THE HULK" {...a11yProps1(6)} />
+                                            <Tab className='txt-ui' label="THOR" {...a11yProps1(7)} />
+                                            <Tab className='txt-ui' label="DOCTOR STRANGE" {...a11yProps1(8)} />
+                                            <Tab className='txt-ui' label="Scarlet Witch" {...a11yProps1(9)} />
+                                            <Tab className='txt-ui' label="Vision" {...a11yProps1(10)} />
+                                            <Tab className='txt-ui' label="Black Widow" {...a11yProps1(11)} />
                                         </Tabs>
                                     </Box>
                                     <TabPanel value={value1} index={0}>
                                         <Grid container>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                         </Grid>
                                         <br />
                                         <Grid container>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                         </Grid>
                                         <br />
                                         <Grid container>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                             <Grid item xs>
-                                                <DisplayCard />
+                                                <DisplayCard imageUrl={imgSpiderman} title="Spider-man" />
                                             </Grid>
                                         </Grid>
-                                        <br />
-                                        <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-                                            <Pagination count={20} variant="outlined" shape="rounded" />
-                                        </div>
                                     </TabPanel>
                                     <TabPanel value={value1} index={1}>
-                                        Item Two
+                                        <Grid container>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                        </Grid>
+                                        <br />
+                                        <Grid container>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                        </Grid>
+                                        <br />
+                                        <Grid container>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgIronman} title="Iron man" />
+                                            </Grid>
+                                        </Grid>
                                     </TabPanel>
                                     <TabPanel value={value1} index={2}>
-                                        Item Three
+                                        <Grid container>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                        </Grid>
+                                        <br />
+                                        <Grid container>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                        </Grid>
+                                        <br />
+                                        <Grid container>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                            <Grid item xs>
+                                                <DisplayCard imageUrl={imgCaption} title="Caption America" />
+                                            </Grid>
+                                        </Grid>
                                     </TabPanel>
                                     <TabPanel value={value1} index={3}>
                                         Item One
@@ -271,7 +393,15 @@ function Comics() {
                     </Box>
                 </Stack>
             </div>
-            {/* <marquee>okkkkkkkkk</marquee> */}
+            <br />
+            {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Most comics recently</div>
+            <Box>
+                <Trendings />
+            </Box> */}
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Pagination count={20} variant="outlined" shape="rounded" />
+            </div>
+            <br />
         </div>
     );
 }
