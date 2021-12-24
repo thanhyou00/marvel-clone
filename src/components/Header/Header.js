@@ -10,14 +10,10 @@ import logo from '../../assets/images/logo.png'
 import Switch from '@mui/material/Switch';
 import Stack from '@mui/material/Stack';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import './Header.scss'
 import { MenuItem } from '@mui/material';
-import { Route, Routes, Link } from 'react-router-dom';
-// import App from '../../views/App';
-import Comics from '../Comics/Comics';
-import Home from '../Home/Home';
-
-
+import { Link } from 'react-router-dom';
+import Routing from '../../routes/Routing';
+import './Header.scss'
 
 function Header() {
   // dark/light mode
@@ -187,7 +183,7 @@ function Header() {
                 component="div"
                 sx={{ display: { xs: 'none', sm: 'block' } }}
               >
-                <Link to='/contacts'><p>Contacts</p></Link>
+                <Link to='/contact'><p>Contact</p></Link>
               </Typography>
             </MenuItem>
             <MenuItem>
@@ -222,11 +218,9 @@ function Header() {
         </AppBar>
       </Box>
       {/* Router */}
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/comics' element={<Comics />}></Route>
-      </Routes>
+      <Routing />
     </div>
   );
 };
+
 export default Header;
