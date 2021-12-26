@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
-
+import { Link } from 'react-router-dom';
 import './DisplayCard.scss'
 
 function DisplayCard(props) {
@@ -30,7 +30,7 @@ function DisplayCard(props) {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Button size="small">Watch</Button>
+                        <Link to='/spiderman'><p style={{color:'black', fontWeight:'bold'}}>Detail</p></Link>
                         <Button size="small">
                             <Rating name="size-small" defaultValue={2} size="small" precision={0.5} />
                         </Button>

@@ -8,7 +8,6 @@ import Pagination from '@mui/material/Pagination';
 import PropTypes from 'prop-types';
 import { Grid, Stack } from '@mui/material';
 import DisplayCard from '../Cards/DisplayCard';
-// import Trendings from '../Trendings/Trendings';
 import imgSpiderman from '../../assets/images/nguoi-nhen-tro-ve-nha-2017-8524.jpg'
 import imgIronman from '../../assets/images/Iron_Man_2_poster_Viet.jpg'
 import imgCaption from '../../assets/images/captionamerica.jpg'
@@ -40,7 +39,7 @@ function Comics() {
             >
                 {value === index && (
                     <Box sx={{ p: 3 }}>
-                        <Typography>{children}</Typography>
+                        <Typography component={'span'}>{children}</Typography>
                     </Box>
                 )}
             </div>
@@ -394,10 +393,6 @@ function Comics() {
                 </Stack>
             </div>
             <br />
-            {/* <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Most comics recently</div>
-            <Box>
-                <Trendings />
-            </Box> */}
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                 <Pagination count={20} variant="outlined" shape="rounded" />
             </div>

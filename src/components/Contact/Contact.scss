@@ -11,7 +11,7 @@ textarea {
 
 label {
     font-size: 18px;
-    color: black;
+    font-weight: bold;
 }
 
 .title {
@@ -23,10 +23,10 @@ label {
 
 .txt-input {
     outline: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 5px;
-    padding-right: 60px;
+    padding-right: 100px;
     margin-top: 10px;
     border:  1px solid black;
 }
