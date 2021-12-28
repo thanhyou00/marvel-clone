@@ -16,7 +16,7 @@ function DetailsCard() {
             <Card sx={{ display: 'flex' }}>
                 <CardMedia
                     component="img"
-                    sx={{ width: '30%', height: '40%', marginRight: 15 }}
+                    sx={{ width: '30%', marginRight: 15 }}
                     image={imgSpiderman}
                     alt="Live from space album cover"
                 />

@@ -30,7 +30,7 @@ function DisplayCard(props) {
                         </Typography>
                     </CardContent>
                     <CardActions>
-                        <Link to='/spiderman'><p style={{color:'black', fontWeight:'bold'}}>Detail</p></Link>
+                        <Link to='/spiderman'><p style={{ color: 'black', fontWeight: 'bold' }}>Detail</p></Link>
                         <Button size="small">
                             <Rating name="size-small" defaultValue={2} size="small" precision={0.5} />
                         </Button>
