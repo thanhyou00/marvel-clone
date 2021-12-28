@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/marvel-comics/static/css/main.664aabb3.css",
+    "main.js": "/marvel-comics/static/js/main.f86dde76.js",
+    "static/js/787.a2d1484a.chunk.js": "/marvel-comics/static/js/787.a2d1484a.chunk.js",
+    "static/media/slide4.jpg": "/marvel-comics/static/media/slide4.3026b0192bfd5b0af714.jpg",
+    "static/media/hulk.png": "/marvel-comics/static/media/hulk.69a37e17198ac6d7339e.png",
+    "static/media/slide1.jpg": "/marvel-comics/static/media/slide1.91afd7704562a2005d95.jpg",
+    "static/media/slide3.jpg": "/marvel-comics/static/media/slide3.d8f9f4a681639917a243.jpg",
+    "static/media/slide2.jpg": "/marvel-comics/static/media/slide2.a4447eed6b1ba3d616ff.jpg",
+    "static/media/iron-man.png": "/marvel-comics/static/media/iron-man.6d89cea482d117e256b4.png",
+    "static/media/caption.png": "/marvel-comics/static/media/caption.1b1ec7d61236c3c2afaf.png",
+    "static/media/spiderman.png": "/marvel-comics/static/media/spiderman.1cfb0914af4c711f6dce.png",
+    "static/media/Iron_Man_2_poster_Viet.jpg": "/marvel-comics/static/media/Iron_Man_2_poster_Viet.0ec3646a279375db35ca.jpg",
+    "static/media/captionamerica.jpg": "/marvel-comics/static/media/captionamerica.24b28bc984f4a2ccef14.jpg",
+    "static/media/nguoi-nhen-tro-ve-nha-2017-8524.jpg": "/marvel-comics/static/media/nguoi-nhen-tro-ve-nha-2017-8524.4bcb09b61e05e5e6d2b6.jpg",
+    "static/media/undraw_freelancer_re_irh4.svg": "/marvel-comics/static/media/undraw_freelancer_re_irh4.52398fba0938744a7f8bd71b8e774617.svg",
+    "static/media/logo.png": "/marvel-comics/static/media/logo.c96ce44b219840ad1911.png",
+    "index.html": "/marvel-comics/index.html",
+    "main.664aabb3.css.map": "/marvel-comics/static/css/main.664aabb3.css.map",
+    "main.f86dde76.js.map": "/marvel-comics/static/js/main.f86dde76.js.map",
+    "787.a2d1484a.chunk.js.map": "/marvel-comics/static/js/787.a2d1484a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.664aabb3.css",
+    "static/js/main.f86dde76.js"
+  ]
+}
